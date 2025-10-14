@@ -19,6 +19,7 @@ app.use(express.json())
 app.use("/api/auth",userRoute)
 app.use("/api/welcome",homeRoute)
 app.use("/api/welcome",adminRoute)
+
 app.use(cors())
 
 var PORT = process.env.PORT || 7777
